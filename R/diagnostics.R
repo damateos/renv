@@ -49,6 +49,50 @@ diagnostics <- function(project = NULL) {
 
 }
 
+#' Returns a list with the diagnostics report
+#'
+#' Summarizing the state of a project using renv.
+#' This report can occasionally be useful when diagnosing issues with renv.
+#'
+#' @inheritParams renv-params
+#'
+#' @return A list.
+#'
+#' @export
+save_diagnostics <- function(project = NULL) {
+
+  renv_scope_error_handler()
+
+  project <- renv_project_resolve(project)
+  renv_project_lock(project = project)
+
+  if (renv_file_type(project, symlinks = FALSE) != "directory") {
+    fmt <- "project %s is not a directory"
+    stopf(fmt, renv_path_pretty(project))
+  }
+
+  renv_scope_options(renv.verbose = TRUE)
+
+list(
+    renv_diagnostics_session,
+    renv_diagnostics_project,
+    renv_diagnostics_status,
+    renv_diagnostics_packages,
+    renv_diagnostics_abi,
+    renv_diagnostics_profile,
+    renv_diagnostics_settings,
+    renv_diagnostics_options,
+    renv_diagnostics_envvars,
+    renv_diagnostics_path,
+    renv_diagnostics_cache
+  )
+
+
+}
+
+
+
+
 renv_diagnostics_session <- function(project) {
   writef(header("Session Info"))
   renv_scope_options(width = 80)
