@@ -23,8 +23,8 @@ sets up the system library \link{sandbox}, if needed, and creates shims
 for \code{install.packages()}, \code{update.packages()}, and \code{remove.packages()}.
 
 You should not generally need to call \code{renv::load()} yourself, as it's
-called automatically by the project auto-loader created by \code{\link[=init]{init()}}/
-\code{\link[=activate]{activate()}}. However, if needed, you can use \code{renv::load("<project>")}
+called automatically by the project auto-loader created by \code{\link[renv:init]{renv::init()}}/
+\code{\link[renv:activate]{renv::activate()}}. However, if needed, you can use \code{renv::load("<project>")}
 to explicitly load an renv project located at a particular path.
 }
 \section{Shims}{

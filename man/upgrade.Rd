@@ -36,7 +36,7 @@ a development version from GitHub. Automatically snapshots the update
 renv, updates the activate script, and restarts R.
 
 If you want to update all packages (including renv) to their latest CRAN
-versions, use \code{\link[=update]{update()}}.
+versions, use \code{\link[renv:update]{renv::update()}}.
 }
 \examples{
 \dontrun{

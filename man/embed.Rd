@@ -42,7 +42,7 @@ paths activated for this script? Set this to \code{TRUE} if you only want the
 packages provided to \code{renv::use()} to be visible on the library paths.}
 
 \item{sandbox}{Should the system library be sandboxed? See the sandbox documentation in
-\link{config} for more details. You can also provide an explicit sandbox
+\link[renv:config]{renv::config} for more details. You can also provide an explicit sandbox
 path if you want to configure where \code{renv::use()} generates its sandbox.
 By default, the sandbox is generated within the \R temporary directory.}
 

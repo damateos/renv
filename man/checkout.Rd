@@ -22,7 +22,7 @@ are matched to \code{...}, renv will signal an error.}
 
 \item{packages}{The packages to be installed. When \code{NULL} (the default),
 all packages currently used in the project will be installed, as
-determined by \code{\link[=dependencies]{dependencies()}}. The recursive dependencies of these
+determined by \code{\link[renv:dependencies]{renv::dependencies()}}. The recursive dependencies of these
 packages will be included as well.}
 
 \item{date}{The snapshot date to use. When set, the associated snapshot as

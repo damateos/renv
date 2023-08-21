@@ -9,7 +9,7 @@ autoload()
 \description{
 Automatically load the renv project associated with a particular directory.
 renv will search parent directories for the renv project root; if found,
-that project will be loaded via \code{\link[=load]{load()}}.
+that project will be loaded via \code{\link[renv:load]{renv::load()}}.
 }
 \details{
 To enable the renv auto-loader, you can place:

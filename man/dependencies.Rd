@@ -178,7 +178,7 @@ doesn't need it to run (i.e. it's only a development dependency).
 
 You can record development dependencies by listing them in the \code{Suggests}
 field of your project's \code{DESCRIPTION} file. Development dependencies will be installed by
-\code{\link[=install]{install()}} (when called without arguments) but will not be tracked in
+\code{\link[renv:install]{renv::install()}} (when called without arguments) but will not be tracked in
 the project snapshot. If you need greater control, you can also try project
 profiles as discussed in \code{vignette("profiles")}.
 }

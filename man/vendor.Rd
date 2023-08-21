@@ -23,7 +23,7 @@ Calling \code{renv:::vendor()} will:
 Using this, projects can take a dependency on renv, and use renv
 internals, in a CRAN-compliant way. After vendoring renv, you can
 use renv APIs in your package via the embedded renv environment;
-for example, you could call the \code{\link[=dependencies]{dependencies()}} function with:
+for example, you could call the \code{\link[renv:dependencies]{renv::dependencies()}} function with:
 
 \if{html}{\out{<div class="sourceCode">}}\preformatted{renv$dependencies()
 }\if{html}{\out{</div>}}

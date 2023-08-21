@@ -125,7 +125,7 @@ to restore from known good state in the lockfile.
 
 If you're not sure which case applies, it's generally safer to call
 \code{renv::snapshot()}. If you want to rollback to an earlier known good
-status, see \code{\link[=history]{history()}} and \code{\link[=revert]{revert()}}.
+status, see \code{\link[renv:history]{renv::history()}} and \code{\link[renv:history]{renv::revert()}}.
 }
 
 \examples{

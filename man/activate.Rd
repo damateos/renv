@@ -28,10 +28,10 @@ called for its side effects.
 \description{
 \code{activate()} enables renv for a project in both the current session and
 in all future sessions. You should not generally need to call \code{activate()}
-yourself as it's called automatically by \code{\link[=init]{init()}}, which is the best
+yourself as it's called automatically by \code{\link[renv:init]{renv::init()}}, which is the best
 way to start using renv in a new project.
 
-\code{activate()} first calls \code{\link[=scaffold]{scaffold()}} to set up the project
+\code{activate()} first calls \code{\link[renv:scaffold]{renv::scaffold()}} to set up the project
 infrastructure. Most importantly, this creates a project library and adds a
 an auto-loader to \code{.Rprofile} to ensure that the project library is
 automatically used for all future instances of the project. It then restarts

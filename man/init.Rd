@@ -81,7 +81,7 @@ the \href{https://packagemanager.posit.co/}{Posit Public Package Manager} CRAN
 mirror for package installation. The primary benefit to using this mirror is
 that it can provide pre-built binaries for \R packages on a variety of
 commonly-used Linux distributions. This behavior can be configured or
-disabled if desired -- see the options in \code{\link[=config]{config()}} for more details.
+disabled if desired -- see the options in \code{\link[renv:config]{renv::config()}} for more details.
 }
 
 \examples{
